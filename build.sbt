@@ -19,22 +19,22 @@ scalacOptions ++= Seq(
   "-language:implicitConversions"
 )
 
-libraryDependencies += "scalajs-react-universe" %%% "universal" % "2017.3.22-beta" % Provided
+libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.3.26-beta" % Provided
 
 //bintray
 resolvers += Resolver.jcenterRepo
 
-organization := "scalajs-react-universe"
+organization := "scalajs-react-interface"
 
 licenses += ("Apache-2.0", url(
   "https://www.apache.org/licenses/LICENSE-2.0.html"))
 
-bintrayOrganization := Some("scalajs-react-universe")
+bintrayOrganization := Some("scalajs-react-interface")
 
 bintrayRepository := "maven"
 
 publishArtifact in Test := false
 
-resolvers += Resolver.bintrayRepo("scalajs-react-universe", "maven")
+resolvers += Resolver.bintrayRepo("scalajs-react-interface", "maven")
 libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0" % Test
 scalaJSStage in Global := FastOptStage
