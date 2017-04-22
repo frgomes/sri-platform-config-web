@@ -19,7 +19,7 @@ scalacOptions ++= Seq(
   "-language:implicitConversions"
 )
 
-libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.3.26-beta" % Provided
+libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.4.23-beta" % Provided
 
 //bintray
 resolvers += Resolver.jcenterRepo
