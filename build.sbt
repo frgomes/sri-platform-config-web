@@ -1,6 +1,6 @@
 name := "platform-config-web"
 
-//version := "2017.2.0-SNAPSHOT"
+//version := "2017.7.0-SNAPSHOT"
 
 enablePlugins(ScalaJSPlugin)
 
@@ -19,7 +19,7 @@ scalacOptions ++= Seq(
   "-language:implicitConversions"
 )
 
-libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.4.23-beta" % Provided
+libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.7.9-RC" % Provided
 
 //bintray
 resolvers += Resolver.jcenterRepo
@@ -36,5 +36,4 @@ bintrayRepository := "maven"
 publishArtifact in Test := false
 
 resolvers += Resolver.bintrayRepo("scalajs-react-interface", "maven")
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0" % Test
 scalaJSStage in Global := FastOptStage
